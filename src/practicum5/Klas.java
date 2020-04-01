@@ -35,7 +35,6 @@ public class Klas {
             leerlingen.append(I.toString()).append('\n');
         }
 
-        String s = "In klas " + klasCode + " zitten de volgende leerlingen:" + '\n' + leerlingen;
-        return s;
+        return "In klas " + klasCode + " zitten de volgende leerlingen:" + '\n' + leerlingen;
     }
 }

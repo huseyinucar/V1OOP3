@@ -10,8 +10,7 @@ public class Persoon {
     }
 
     public String toString() {
-        String s = "en heeft huisbaas " + naam + "; " + "leeftijd " + leeftijd +
+        return "en heeft huisbaas " + naam + "; " + "leeftijd " + leeftijd +
                 " jaar";
-        return s;
     }
 }

@@ -51,8 +51,7 @@ public class AutoHuur {
             klant = "op naam van: " + getHuurder();
         }
 
-        String s = auto + "\n" + klant + "\n"
+        return auto + "\n" + klant + "\n"
                 + "aantal dagen: " + getAantalDagen() + " en dat kost " + totaalPrijs();
-        return s;
     }
 }

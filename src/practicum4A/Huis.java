@@ -19,7 +19,6 @@ public class Huis {
     }
 
     public String toString() {
-        String s = "Huis " + adres + " is gebouwd in " + bouwjaar + '\n' + huisbaas;
-        return s;
+        return "Huis " + adres + " is gebouwd in " + bouwjaar + '\n' + huisbaas;
     }
 }

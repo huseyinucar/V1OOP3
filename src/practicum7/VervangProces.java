@@ -5,11 +5,14 @@ public class VervangProces implements OpmaakProces {
     private String nieuw;
 
     public VervangProces(String oud, String nieuw) {
-        oud = oud;
-        nieuw = nieuw;
+        this.oud = oud;
+        this.nieuw = nieuw;
     }
 
-    public maakOp(String input) {
-
+    public String maakOp(String input) {
+        if (input.contains(oud)) {
+            input = input.replace(oud, nieuw);
+        }
+        return input;
     }
 }

@@ -20,17 +20,21 @@ public class Voetbalclub {
     }
 
     public int aantalPunten() {
-         int totaal = (aantalGewonnen *3) + (aantalGelijk);
-         return totaal;
+        return (aantalGewonnen *3) + (aantalGelijk);
     }
 
     public int aantalGespeeld() {
-        int totaal = (aantalGewonnen + aantalGelijk + aantalVerloren);
-        return totaal;
+        return (aantalGewonnen + aantalGelijk + aantalVerloren);
     }
 
     public String toString() {
-        return naam +" "+" "+ aantalGespeeld() +" "+ aantalGewonnen +" "+ aantalGelijk +" "+ aantalVerloren
+        String begin = "FC";
+
+        if (naam != null && naam.length() !=0) {
+            begin = naam;
+        }
+
+        return begin +" "+" "+ aantalGespeeld() +" "+ aantalGewonnen +" "+ aantalGelijk +" "+ aantalVerloren
                 +" "+ aantalPunten();
     }
     

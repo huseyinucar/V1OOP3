@@ -30,13 +30,11 @@ public class Zwembad {
     }
 
     public double inhoud() {
-        double totaal = (breedte * lengte * diepte);
-        return totaal;
+        return (breedte * lengte * diepte);
     }
 
     public String toString() {
-        String s = " Dit zwembad is " + breedte + " meter breed, " + lengte +
-                " meter lang, en " + diepte + " meter diep " ;
-        return s;
+        return " Dit zwembad is " + breedte + " meter breed, " + lengte +
+                " meter lang, en " + diepte + " meter diep ";
     }
 }

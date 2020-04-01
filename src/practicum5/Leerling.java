@@ -13,7 +13,7 @@ public class Leerling {
     }
 
     public double getCijfer() {
-        return this.cijfer;
+        return cijfer;
     }
 
     public void setCijfer(double cijfer) {
@@ -21,7 +21,6 @@ public class Leerling {
     }
 
     public String toString() {
-        String s = naam + " heeft cijfer: " + cijfer;
-        return s;
+        return naam + " heeft cijfer: " + getCijfer();
     }
 }

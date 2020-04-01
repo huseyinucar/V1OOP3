@@ -36,21 +36,13 @@ public class Persoon {
         }
     }
 
-    public Game zoekGameOpNaam(String nm) {
-        for (Game game : mijnGames) {
-            if (game.getNaam().equals(nm)) {
-                return game;
-            }
-        }
-        return null;
-    }
-
     public String toString() {
         StringBuilder games = new StringBuilder();
         for (Game game : mijnGames) {
             games.append("\n").append(game.toString());
         }
 
-        return String.format("%s heeft een budget van €%.2f en bezit de volgende games:%s", naam, getBudget(), games);
+        String s = String.format("%s heeft een budget van €%.2f en bezit de volgende games:%s", naam, getBudget(), games);
+        return s;
     }
 }

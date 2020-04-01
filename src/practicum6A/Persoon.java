@@ -1,5 +1,6 @@
 package practicum6A;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Persoon {
@@ -34,6 +35,16 @@ public class Persoon {
         } else {
             return false;
         }
+    }
+
+    public ArrayList<Game> bepaalGamesNietInBezit(ArrayList<Game> alleGames){
+        ArrayList<Game> nogNiet = new ArrayList<Game>();
+        for(Game g:alleGames){
+            if(!mijnGames.contains(g)){
+                nogNiet.add(g);
+            }
+        }
+        return nogNiet;
     }
 
     public String toString() {

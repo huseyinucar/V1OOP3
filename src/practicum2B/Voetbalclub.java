@@ -37,5 +37,4 @@ public class Voetbalclub {
         return begin +" "+" "+ aantalGespeeld() +" "+ aantalGewonnen +" "+ aantalGelijk +" "+ aantalVerloren
                 +" "+ aantalPunten();
     }
-    
 }

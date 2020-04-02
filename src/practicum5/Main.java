@@ -10,7 +10,7 @@ public class Main {
         l = new Leerling("Wim");
         k.voegLeerlingToe(l);
         System.out.println(k);
-        k.wijzigCijfer(new String("Hans"), 7.6);
+        k.wijzigCijfer("Hans", 7.6);
         k.wijzigCijfer("Klaas", 7.6);
         System.out.println(k.toString());
         System.out.println("Aantal leerlingen: " + k.aantalLeerlingen());

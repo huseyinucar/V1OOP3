@@ -14,6 +14,9 @@ public class Main {
         System.out.println(Utils.euroBedrag(3.85374, -1));
         System.out.println(Utils.euroBedrag(3.42714, 3));
         System.out.println(Utils.euroBedrag(3.31354, 5));
-        System.out.println(Utils.euroBedrag(3, 13));
+        System.out.println(Utils.euroBedrag(3, 13) + "\n");
+        
+        System.out.print("Aantal keren euroBedrag-methoden gebruikt: ");
+        System.out.print(Utils.getAantal());
     }
 }

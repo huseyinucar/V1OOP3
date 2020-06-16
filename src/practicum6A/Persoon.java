@@ -45,6 +45,17 @@ public class Persoon {
         return null;
     }
 
+    public ArrayList<Game> bepaalGamesNietInBezit(ArrayList<Game> alleGames) {
+        ArrayList<Game> nogNiet = new ArrayList<Game>();
+
+        for(Game g:alleGames){
+            if(!mijnGames.contains(g)){
+                nogNiet.add(g);
+            }
+        }
+        return nogNiet;
+    }
+
     public String toString() {
         StringBuilder games = new StringBuilder();
         for (Game game : mijnGames) {

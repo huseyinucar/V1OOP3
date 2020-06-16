@@ -11,5 +11,4 @@ class ZwembadTest {
 
         assertEquals(16.5, z1.inhoud());
     }
-
 }

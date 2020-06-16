@@ -1,0 +1,4 @@
+Wat gebeurt er als je try-catch blok verwijdert?
+
+Mijn antwoord:   de applicatie helemaal niet uitgevoerd kan worden
+Juiste antwoord: de code niet meer compileert

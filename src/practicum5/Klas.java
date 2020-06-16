@@ -31,10 +31,9 @@ public class Klas {
 
     public String toString() {
         StringBuilder leerlingen = new StringBuilder();
-        for (Leerling I : deLeerlingen.values()) {
+        for (Leerling I : getLeerlingen()) {
             leerlingen.append(I.toString()).append('\n');
         }
-
         return "In klas " + klasCode + " zitten de volgende leerlingen:" + '\n' + leerlingen;
     }
 }

@@ -50,7 +50,6 @@ public class Persoon {
         for (Game game : mijnGames) {
             games.append("\n").append(game.toString());
         }
-
         return String.format("%s heeft een budget van €%.2f en bezit de volgende games:%s", naam, getBudget(), games);
     }
 }
